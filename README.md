@@ -11,7 +11,7 @@ Run **GLM-5.3-Flash**, a 321B mixture-of-experts model (~18B active per word), o
 
 This repo has the exact **commands**, the **test scripts**, every **model output** (the apps it built, the SVG, the vision rebuild), and the **raw logs** from the video, including a per-second log of VRAM, RAM and SSD reads.
 
-*Project Maya* opensource project small project. Take these results as an exciting first look, not a final verdict. Read its scripts before running them.
+**Project Maya** opensource project small project. Take these results as an exciting first look, not a final verdict. Read its scripts before running them.
 
 ## Results
 
