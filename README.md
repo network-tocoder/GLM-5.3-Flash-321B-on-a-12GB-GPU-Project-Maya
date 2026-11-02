@@ -9,7 +9,7 @@
 
 **GLM-5.3-Flash** by [Z.ai](https://huggingface.co/zai-org) is a 321-billion-parameter model.  
 
-**Project Maya** (https://github.com/mw00/project-maya), a brand-new open-source engine, splits the model across the graphics card, RAM and SSD, and tunes itself to your PC. I set it up, ran the full test set, and compared it with DeepSeek V4.1 Flash on Strata on the exact same graphics card.
+**[Project Maya]** (https://github.com/mw00/project-maya), a brand-new open-source engine, splits the model across the graphics card, RAM and SSD, and tunes itself to your PC. I set it up, ran the full test set, and compared it with DeepSeek V4.1 Flash on Strata on the exact same graphics card.
 
 Every number in this video comes from a real run on real hardware. Project Maya is a new, small project — take this as an exciting first look, not the final word.
 
