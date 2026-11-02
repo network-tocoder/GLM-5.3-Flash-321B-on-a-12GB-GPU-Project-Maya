@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenLeaf Café · Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f6f7;
+    padding: 40px 48px;
+    color: #1a1f2b;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .btn-new-order {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .cards {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    flex: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .card .label {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+  .card .value {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .card .delta {
+    font-size: 14px;
+  }
+  .up { color: #16a34a; }
+  .down { color: #dc2626; }
+  .panel {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .panel h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    padding: 8px 0;
+  }
+  td {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .col-item { width: 40%; }
+  .col-sold { width: 20%; }
+  .col-price { width: 20%; }
+  .col-status { width: 20%; }
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .badge-in-stock { background: #d1f5df; color: #15803d; }
+  .badge-low { background: #fdf3c8; color: #854d0e; }
+  .badge-sold-out { background: #fbd3d3; color: #b91c1c; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>GreenLeaf Café · Dashboard</h1>
+    <button class="btn-new-order">+ New Order</button>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="label">Orders today</div>
+      <div class="value">128</div>
+      <div class="delta up">▲ 12% vs yesterday</div>
+    </div>
+    <div class="card">
+      <div class="label">Revenue</div>
+      <div class="value">$2,940</div>
+      <div class="delta up">▲ 8%</div>
+    </div>
+    <div class="card">
+      <div class="label">Avg. wait</div>
+      <div class="value">6 min</div>
+      <div class="delta down">▼ 1 min slower</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Top items</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-item">Item</th>
+          <th class="col-sold">Sold</th>
+          <th class="col-price">Price</th>
+          <th class="col-status">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oat Latte</td>
+          <td>46</td>
+          <td>$4.50</td>
+          <td><span class="badge badge-in-stock">In stock</span></td>
+        </tr>
+        <tr>
+          <td>Avocado Toast</td>
+          <td>31</td>
+          <td>$8.00</td>
+          <td><span class="badge badge-low">Low</span></td>
+        </tr>
+        <tr>
+          <td>Berry Smoothie</td>
+          <td>22</td>
+          <td>$6.25</td>
+          <td><span class="badge badge-sold-out">Sold out</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

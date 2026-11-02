@@ -1,0 +1,5 @@
+Jan: 120, Feb: 95, Mar: 160, Apr: 210, May: 185, Jun: 240.
+
+Increases: Feb −25, Mar +65, Apr +50, May −25, Jun +55. Biggest increase is March (+65 over February).
+
+ANSWER: Mar

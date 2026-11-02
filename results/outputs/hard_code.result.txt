@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/tmp/lru_test.py", line 57, in <module>
+    c.put(3, 3); assert c.get(2) == -1
+AssertionError

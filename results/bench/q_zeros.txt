@@ -1,0 +1,11 @@
+n! ends with 25 zeros when the count of factors of 5 equals 25.
+
+Count: ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + ...
+
+Try n = 100: 20 + 4 = 24. Not enough.
+Try n = 105: 21 + 4 = 25. ✓
+Check n = 104: 20 + 4 = 24. No.
+
+So the smallest is 105.
+
+ANSWER: 105

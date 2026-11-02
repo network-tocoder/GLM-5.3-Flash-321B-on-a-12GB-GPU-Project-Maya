@@ -1,0 +1,113 @@
+```python
+#!/usr/bin/env python3
+"""A simple command-line to-do app storing tasks in a JSON file."""
+
+import argparse
+import json
+import os
+import sys
+from datetime import datetime
+
+TODO_FILE = "todos.json"
+
+
+def load_tasks():
+    if not os.path.exists(TODO_FILE):
+        return []
+    try:
+        with open(TODO_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"Error reading {TODO_FILE}: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def save_tasks(tasks):
+    with open(TODO_FILE, "w", encoding="utf-8") as f:
+        json.dump(tasks, f, indent=2, ensure_ascii=False)
+
+
+def add_task(text):
+    tasks = load_tasks()
+    task = {
+        "id": (max((t["id"] for t in tasks), default=0)) + 1,
+        "text": text,
+        "done": False,
+        "created": datetime.now().isoformat(timespec="seconds"),
+    }
+    tasks.append(task)
+    save_tasks(tasks)
+    print(f"Added task #{task['id']}: {text}")
+
+
+def list_tasks():
+    tasks = load_tasks()
+    if not tasks:
+        print("No tasks yet. Add one with: todo.py add \"Buy milk\"")
+        return
+    print(f"{'ID':<4} {'Status':<8} {'Created':<20} Task")
+    print("-" * 60)
+    for t in tasks:
+        status = "done" if t["done"] else "pending"
+        print(f"{t['id']:<4} {status:<8} {t['created']:<20} {t['text']}")
+
+
+def find_task(tasks, task_id):
+    for t in tasks:
+        if t["id"] == task_id:
+            return t
+    return None
+
+
+def done_task(task_id):
+    tasks = load_tasks()
+    task = find_task(tasks, task_id)
+    if task is None:
+        print(f"No task with id {task_id}.")
+        sys.exit(1)
+    task["done"] = True
+    save_tasks(tasks)
+    print(f"Marked task #{task_id} as done: {task['text']}")
+
+
+def delete_task(task_id):
+    tasks = load_tasks()
+    task = find_task(tasks, task_id)
+    if task is None:
+        print(f"No task with id {task_id}.")
+        sys.exit(1)
+    tasks.remove(task)
+    save_tasks(tasks)
+    print(f"Deleted task #{task_id}: {task['text']}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Simple JSON-backed to-do app")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    p_add = sub.add_parser("add", help="Add a new task")
+    p_add.add_argument("text", nargs="+", help="Task description")
+
+    sub.add_parser("list", help="List all tasks")
+
+    p_done = sub.add_parser("done", help="Mark a task as done")
+    p_done.add_argument("id", type=int, help="Task id")
+
+    p_del = sub.add_parser("delete", help="Delete a task")
+    p_del.add_argument("id", type=int, help="Task id")
+
+    args = parser.parse_args()
+
+    if args.command == "add":
+        add_task(" ".join(args.text))
+    elif args.command == "list":
+        list_tasks()
+    elif args.command == "done":
+        done_task(args.id)
+    elif args.command == "delete":
+        delete_task(args.id)
+
+
+if __name__ == "__main__":
+    main()
+```

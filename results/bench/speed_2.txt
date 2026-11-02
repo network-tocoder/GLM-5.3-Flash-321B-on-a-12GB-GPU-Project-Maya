@@ -1,0 +1,9 @@
+- **Multiple expert networks**: Instead of one large dense model, MoE contains many "expert" feed-forward layers, each specialized (implicitly) for different kinds of inputs or tasks.
+
+- **A router decides**: For each token, a small routing network scores all experts and selects which one(s) should process that token.
+
+- **Sparse activation**: Only a few experts (often 1–2) are activated per token, so even though the total parameter count is huge, the compute per token stays small.
+
+- **Combining outputs**: The outputs from the selected experts are weighted (by the router's scores) and summed before passing to the next layer.
+
+- **The trade-off**: MoE gives better quality per unit of compute, but costs more memory (all experts must be loaded) and needs careful training to encourage balanced use of experts.

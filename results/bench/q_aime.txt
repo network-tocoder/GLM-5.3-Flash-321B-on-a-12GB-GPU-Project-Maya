@@ -1,0 +1,64 @@
+=== THINKING ===
+We need to find all integer bases $b > 9$ such that $17_b$ divides $97_b$.
+
+In base $b$: $17_b = b + 7$ and $97_b = 9b + 7$.
+
+We need $(b+7) \mid (9b+7)$.
+
+$9b + 7 = 9(b+7) - 56$.
+
+So $(b+7) \mid 56$.
+
+Since $b > 9$, $b + 7 > 16$. Divisors of 56 greater than 16: 28, 56.
+
+- $b + 7 = 28 \Rightarrow b = 21$. Check $b > 9$: yes. Also need $b$ to be a valid base: digits 9 and 7 must be less than $b$, so $b > 9$ ensures 9 is a valid digit. $b = 21$: valid.
+- $b + 7 = 56 \Rightarrow b = 49$. Valid.
+
+Also $b+7$ could be negative? No, $b > 9$ so positive.
+
+Divisors of 56: 1, 2, 4, 7, 8, 14, 28, 56. Greater than 16: 28, 56.
+
+So bases: 21 and 49. Sum = 70.
+
+Wait, this is AMC 2024 problem? Actually this is AMC 12 2024 (November) Problem... Let me recall: "The sum of all integer bases for which 17_b is a divisor of 97_b" — answer 70? Let me verify: 2024 AMC problem, answer was 70? Actually I recall the answer being 70? Let me double-check.
+
+$17_{21} = 28$, $97_{21} = 9\cdot21+7 = 196 = 28 \cdot 7$. Yes, divides.
+
+$17_{49} = 56$, $97_{49} = 9\cdot49+7 = 448 = 56 \cdot 8$. Yes.
+
+Sum = 21 + 49 = 70.
+=== ANSWER ===
+## Setting Up
+
+In base $b$, the numbers are:
+- $17_b = b + 7$
+- $97_b = 9b + 7$
+
+I need $(b+7) \mid (9b+7)$ for integer bases $b > 9$.
+
+## Finding the Divisibility Condition
+
+Rewrite $9b + 7$ in terms of $(b+7)$:
+$$9b + 7 = 9(b+7) - 56$$
+
+So $(b+7) \mid (9b+7)$ if and only if $(b+7) \mid 56$.
+
+## Solving
+
+Since $b > 9$, we need $b + 7 > 16$. The divisors of $56$ are:
+$$1, 2, 4, 7, 8, 14, 28, 56$$
+
+Only $28$ and $56$ exceed $16$:
+
+- $b + 7 = 28 \Rightarrow b = 21$
+- $b + 7 = 56 \Rightarrow b = 49$
+
+**Verification:**
+- $b = 21$: $17_{21} = 28$ and $97_{21} = 196 = 28 \cdot 7$ ✓
+- $b = 49$: $17_{49} = 56$ and $97_{49} = 448 = 56 \cdot 8$ ✓
+
+## Sum
+
+$$21 + 49 = 70$$
+
+ANSWER: 70

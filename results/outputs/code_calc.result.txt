@@ -1,0 +1,4 @@
+  File "/tmp/code_calc_test.py", line 46
+    nonlocal pos
+    ^^^^^^^^^^^^
+SyntaxError: name 'pos' is used prior to nonlocal declaration

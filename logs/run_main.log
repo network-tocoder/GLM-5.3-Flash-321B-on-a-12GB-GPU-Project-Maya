@@ -1,0 +1,65 @@
+[12:32:44] model id: glm-5.3-flash
+[12:32:44] RUN speed_1 ...
+[12:33:16]   speed_1: TTFT 4.29s · decode 8.2 tok/s · 223 tok · 31.5s
+[12:33:16] RUN speed_2 ...
+[12:33:36]   speed_2: TTFT 0.14s · decode 10.86 tok/s · 212 tok · 19.7s
+[12:33:36] RUN speed_3 ...
+[12:33:53]   speed_3: TTFT 0.11s · decode 12.72 tok/s · 219 tok · 17.3s
+[12:33:53] RUN context_8k ...
+[12:41:21]   context_8k: TTFT 447.33s · decode 6.9 tok/s · 8 tok · 448.5s
+[12:41:21]   recall PASS
+[12:41:21] RUN context_32k ...
+[13:03:35]   context_32k: TTFT 1331.89s · decode 6.7 tok/s · 8 tok · 1333.1s
+[13:03:35]   recall PASS
+[13:03:35] RUN hard_aime ...
+[13:05:57]   hard_aime: TTFT 8.43s · decode 7.65 tok/s · 1022 tok · 142.0s
+[13:05:57]   hard_aime: PASS (got 70, want 70)
+[13:05:57] RUN hard_zeros ...
+[13:06:16]   hard_zeros: TTFT 5.78s · decode 7.76 tok/s · 103 tok · 19.1s
+[13:06:16]   hard_zeros: PASS (got 105, want 105)
+[13:06:16] RUN hard_letters ...
+[13:06:30]   hard_letters: TTFT 4.85s · decode 9.02 tok/s · 82 tok · 13.9s
+[13:06:30]   hard_letters: FAIL (got 5, want 6)
+[13:06:30] RUN hard_code ...
+[13:07:30]   hard_code: TTFT 11.17s · decode 7.17 tok/s · 355 tok · 60.7s
+[13:07:30]   hard_code: FAIL  Traceback (most recent call last):
+  File "/tmp/lru_test.py", line 57, in <module>
+    c.put(3, 3); assert c.get(2) == -1
+AssertionError
+[13:07:30] RUN svg_poster ...
+[13:13:27]   svg_poster: TTFT 12.19s · decode 9.5 tok/s · 3276 tok · 357.1s
+[13:13:27] RUN canvas_scene ...
+[13:20:19]   canvas_scene: TTFT 10.33s · decode 9.33 tok/s · 3748 tok · 412.0s
+[13:20:19] RUN chess_ai ...
+[13:35:27]   chess_ai: TTFT 17.93s · decode 8.55 tok/s · 7613 tok · 907.9s
+[13:35:27] RUN roguelike_3d ...
+[13:44:44]   roguelike_3d: TTFT 22.38s · decode 8.95 tok/s · 4781 tok · 556.5s
+[13:44:44] RUN threejs_scene ...
+[13:48:23]   threejs_scene: TTFT 16.08s · decode 8.73 tok/s · 1771 tok · 218.9s
+[13:48:23] RUN vision_chart ...
+[13:50:07]   vision_chart: TTFT 95.27s · decode 7.39 tok/s · 66 tok · 104.2s
+[13:50:07]   vision_chart: PASS
+[13:50:07] RUN vision_ui ...
+[13:54:07]   vision_ui: TTFT 88.23s · decode 8.27 tok/s · 1260 tok · 240.5s
+[13:54:07] RUN multilingual ...
+[13:55:44]   multilingual: TTFT 9.87s · decode 12.55 tok/s · 1084 tok · 96.2s
+[13:55:44] DONE
+| Test | TTFT s | Decode tok/s | Prefill tok/s | Prompt tok | Gen tok | Total s |
+|---|---|---|---|---|---|---|
+| speed_1 | 4.29 | 8.2 | 7.2 | 31 | 223 | 31.5 |
+| speed_2 | 0.14 | 10.86 | 224.0 | 31 | 212 | 19.7 |
+| speed_3 | 0.11 | 12.72 | 277.3 | 31 | 219 | 17.3 |
+| context_8k | 447.33 | 6.9 | 12.8 | 5733 | 8 | 448.5 |
+| context_32k | 1331.89 | 6.7 | 17.1 | 22814 | 8 | 1333.1 |
+| hard_aime | 8.43 | 7.65 | 5.3 | 45 | 1022 | 142.0 |
+| hard_zeros | 5.78 | 7.76 | 6.9 | 40 | 103 | 19.1 |
+| hard_letters | 4.85 | 9.02 | 7.6 | 37 | 82 | 13.9 |
+| hard_code | 11.17 | 7.17 | 6.5 | 73 | 355 | 60.7 |
+| svg_poster | 12.19 | 9.5 | 6.2 | 76 | 3276 | 357.1 |
+| canvas_scene | 10.33 | 9.33 | 7.0 | 72 | 3748 | 412.0 |
+| chess_ai | 17.93 | 8.55 | 6.6 | 118 | 7613 | 907.9 |
+| roguelike_3d | 22.38 | 8.95 | 7.0 | 156 | 4781 | 556.5 |
+| threejs_scene | 16.08 | 8.73 | 6.9 | 111 | 1771 | 218.9 |
+| vision_chart | 95.27 | 7.39 | 6.0 | 572 | 66 | 104.2 |
+| vision_ui | 88.23 | 8.27 | 6.3 | 555 | 1260 | 240.5 |
+| multilingual | 9.87 | 12.55 | 6.7 | 66 | 1084 | 96.2 |

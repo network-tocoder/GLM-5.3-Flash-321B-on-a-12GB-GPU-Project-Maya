@@ -1,0 +1,9 @@
+- **Multiple expert networks**: Instead of one large model, MoE contains many "expert" subnetworks, each specialized to handle different kinds of inputs or tasks.
+
+- **Router/gating mechanism**: A small routing network decides which experts to send each token to, based on the input's characteristics.
+
+- **Sparse activation**: Only a few experts (often 1–2) are activated per token, so the model gets the capacity of a huge network while paying only a fraction of the compute cost.
+
+- **Combining outputs**: The weighted outputs of the selected experts are summed (or averaged) to produce the final result for that token.
+
+- **Training efficiency trade-off**: MoEs offer better performance per FLOP than dense models, but require careful balancing so experts are used evenly, plus extra memory to hold all expert parameters.

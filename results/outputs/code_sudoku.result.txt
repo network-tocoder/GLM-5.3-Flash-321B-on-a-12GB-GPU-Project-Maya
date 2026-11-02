@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/tmp/code_sudoku_test.py", line 229, in <module>
+    for i in range(9): assert set(S[i]) == D and set(S[r][i] for r in range(9)) == D
+AssertionError

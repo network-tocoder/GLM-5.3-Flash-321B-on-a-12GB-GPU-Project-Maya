@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#1a1440"/>
+      <stop offset="55%" stop-color="#0d0a26"/>
+      <stop offset="100%" stop-color="#050314"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b2b3d"/>
+      <stop offset="100%" stop-color="#14141f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="50%" stop-color="#00a3ff"/>
+      <stop offset="100%" stop-color="#b46bff"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ffd5"/>
+      <stop offset="100%" stop-color="#7a5cff"/>
+    </linearGradient>
+    <filter id="blurGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="80" r="1.6" opacity="0.9"/>
+    <circle cx="220" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="340" cy="60" r="1.4" opacity="0.8"/>
+    <circle cx="470" cy="120" r="1" opacity="0.6"/>
+    <circle cx="620" cy="70" r="1.7" opacity="0.9"/>
+    <circle cx="760" cy="140" r="1.1" opacity="0.7"/>
+    <circle cx="880" cy="60" r="1.5" opacity="0.8"/>
+    <circle cx="1010" cy="110" r="1.3" opacity="0.7"/>
+    <circle cx="1150" cy="70" r="1.6" opacity="0.9"/>
+    <circle cx="1230" cy="160" r="1.1" opacity="0.6"/>
+    <circle cx="150" cy="260" r="1.2" opacity="0.6"/>
+    <circle cx="380" cy="230" r="1" opacity="0.5"/>
+    <circle cx="560" cy="300" r="1.3" opacity="0.7"/>
+    <circle cx="700" cy="250" r="1" opacity="0.5"/>
+    <circle cx="940" cy="290" r="1.4" opacity="0.8"/>
+    <circle cx="1120" cy="240" r="1.2" opacity="0.6"/>
+    <circle cx="80" cy="400" r="1.2" opacity="0.6"/>
+    <circle cx="1240" cy="380" r="1.3" opacity="0.7"/>
+    <circle cx="300" cy="640" r="1.1" opacity="0.5"/>
+    <circle cx="520" cy="690" r="1.3" opacity="0.6"/>
+    <circle cx="820" cy="660" r="1.1" opacity="0.5"/>
+    <circle cx="1060" cy="700" r="1.4" opacity="0.7"/>
+    <circle cx="60" cy="620" r="1.3" opacity="0.6"/>
+    <circle cx="1200" cy="640" r="1.2" opacity="0.6"/>
+    <circle cx="430" cy="90" r="1" opacity="0.5"/>
+    <circle cx="990" cy="200" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- title -->
+  <text x="640" y="150" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="96" font-weight="900" fill="#ffffff" letter-spacing="14">LOCAL AI</text>
+  <rect x="290" y="170" width="700" height="4" rx="2" fill="url(#glow)" filter="url(#softGlow)"/>
+  <rect x="290" y="170" width="700" height="4" rx="2" fill="url(#glow)"/>
+
+  <!-- subtitle -->
+  <text x="640" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#9fe8ff" letter-spacing="6">763B on 12 GB</text>
+
+  <!-- graphics card -->
+  <g transform="translate(640,430)">
+    <!-- glow behind card -->
+    <ellipse cx="0" cy="0" rx="420" ry="160" fill="#3a2a7a" opacity="0.35" filter="url(#blurGlow)"/>
+
+    <!-- PCB -->
+    <rect x="-380" y="-100" width="760" height="200" rx="18" fill="url(#card)" stroke="#3d3d55" stroke-width="3"/>
+
+    <!-- bracket -->
+    <rect x="-400" y="-95" width="26" height="190" rx="6" fill="#8a8aa0" stroke="#5a5a72" stroke-width="2"/>
+    <rect x="-404" y="-80" width="10" height="20" rx="3" fill="#c8c8dd"/>
+    <rect x="-404" y="-40" width="10" height="20" rx="3" fill="#c8c8dd"/>
+    <rect x="-404" y="0" width="10" height="20" rx="3" fill="#c8c8dd"/>
+    <rect x="-404" y="40" width="10" height="20" rx="3" fill="#c8c8dd"/>
+
+    <!-- fans -->
+    <g>
+      <circle cx="-160" cy="0" r="70" fill="#101018" stroke="#3a3a55" stroke-width="4"/>
+      <g fill="#4a4a68">
+        <path d="M-160 0 L-160 -60 A60 60 0 0 1 -108 -30 Z"/>
+        <path d="M-160 0 L-108 30 A60 60 0 0 1 -160 60 Z"/>
+        <path d="M-160 0 L-212 30 A60 60 0 0 1 -212 -30 Z"/>
+      </g>
+      <circle cx="-160" cy="0" r="16" fill="#222236" stroke="#6a6a8a" stroke-width="3"/>
+
+      <circle cx="20" cy="0" r="70" fill="#101018" stroke="#3a3a55" stroke-width="4"/>
+      <g fill="#4a4a68">
+        <path d="M20 0 L20 -60 A60 60 0 0 1 72 -30 Z"/>
+        <path d="M20 0 L72 30 A60 60 0 0 1 20 60 Z"/>
+        <path d="M20 0 L-32 30 A60 60 0 0 1 -32 -30 Z"/>
+      </g>
+      <circle cx="20" cy="0" r="16" fill="#222236" stroke="#6a6a8a" stroke-width="3"/>
+    </g>
+
+    <!-- heatsink fins -->
+    <g fill="#2a2a3e" stroke="#4a4a6a" stroke-width="1.5">
+      <rect x="130" y="-80" width="10" height="160"/>
+      <rect x="150" y="-80" width="10" height="160"/>
+      <rect x="170" y="-80" width="10" height="160"/>
+      <rect x="190" y="-80" width="10" height="160"/>
+      <rect x="210" y="-80" width="10" height="160"/>
+      <rect x="230" y="-80" width="10" height="160"/>
+      <rect x="250" y="-80" width="10" height="160"/>
+      <rect x="270" y="-80" width="10" height="160"/>
+    </g>
+
+    <!-- glowing circuitry traces -->
+    <g stroke="url(#trace)" stroke-width="3" fill="none" opacity="0.95" filter="url(#softGlow)">
+      <path d="M130 -40 H340 V-70"/>
+      <path d="M130 0 H360"/>
+      <path d="M130 40 H320 V70"/>
+      <path d="M300 -60 H360 V-20"/>
+      <path d="M280 60 H370 V30"/>
+    </g>
+    <g stroke="url(#trace)" stroke-width="2" fill="none">
+      <path d="M130 -40 H340 V-70"/>
+      <path d="M130 0 H360"/>
+      <path d="M130 40 H320 V70"/>
+      <path d="M300 -60 H360 V-20"/>
+      <path d="M280 60 H370 V30"/>
+    </g>
+    <g fill="#aaffff">
+      <circle cx="340" cy="-70" r="4" filter="url(#softGlow)"/>
+      <circle cx="360" cy="0" r="4" filter="url(#softGlow)"/>
+      <circle cx="320" cy="70" r="4" filter="url(#softGlow)"/>
+      <circle cx="340" cy="-70" r="3"/>
+      <circle cx="360" cy="0" r="3"/>
+      <circle cx="320" cy="70" r="3"/>
+    </g>
+
+    <!-- power connector -->
+    <g fill="#1a1a28" stroke="#55557a" stroke-width="2">
+      <rect x="-320" y="70" width="120" height="22" rx="4"/>
+    </g>
+    <g fill="#00ffd5">
+      <rect x="-312" y="76" width="10" height="10" rx="2"/>
+      <rect x="-296" y="76" width="10" height="10" rx="2"/>
+      <rect x="-280" y="76" width="10" height="10" rx="2"/>
+      <rect x="-264" y="76" width="10" height="10" rx="2"/>
+      <rect x="-248" y="76" width="10" height="10" rx="2"/>
+      <rect x="-232" y="76" width="10" height="10" rx="2"/>
+    </g>
+
+    <!-- GPU chip label -->
+    <rect x="130" y="-30" width="90" height="60" rx="8" fill="#0f0f1a" stroke="#5a5a8a" stroke-width="2"/>
+    <text x="175" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00ffd5">GPU</text>
+
+    <!-- slot connector -->
+    <g fill="#d8b850">
+      <rect x="-380" y="88" width="700" height="8" rx="2"/>
+    </g>
+    <g fill="#8a7328">
+      <rect x="-370" y="88" width="14" height="8"/>
+      <rect x="-340" y="88" width="14" height="8"/>
+      <rect x="-310" y="88" width="14" height="8"/>
+      <rect x="-280" y="88" width="14" height="8"/>
+      <rect x="-250" y="88" width="14" height="8"/>
+      <rect x="-220" y="88" width="14" height="8"/>
+      <rect x="-190" y="88" width="14" height="8"/>
+      <rect x="-160" y="88" width="14" height="8"/>
+      <rect x="-130" y="88" width="14" height="8"/>
+      <rect x="-100" y="88" width="14" height="8"/>
+      <rect x="-70" y="88" width="14" height="8"/>
+      <rect x="-40" y="88" width="14" height="8"/>
+      <rect x="-10" y="88" width="14" height="8"/>
+      <rect x="20" y="88" width="14" height="8"/>
+      <rect x="50" y="88" width="14" height="8"/>
+      <rect x="80" y="88" width="14" height="8"/>
+      <rect x="110" y="88" width="14" height="8"/>
+      <rect x="140" y="88" width="14" height="8"/>
+      <rect x="170" y="88" width="14" height="8"/>
+      <rect x="200" y="88" width="14" height="8"/>
+      <rect x="230" y="88" width="14" height="8"/>
+      <rect x="260" y="88" width="14" height="8"/>
+      <rect x="290" y="88" width="14" height="8"/>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <text x="640" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#8a8ab0" letter-spacing="4">RUN THE BIG MODELS. LOCALLY.</text>
+</svg>

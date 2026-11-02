@@ -1,0 +1,25 @@
+[11:51:52] [maya_glm_s24] model id: glm-5.3-flash
+[11:51:52] [maya_glm_s24] RUN speed_1
+[11:52:15] [maya_glm_s24]   speed_1: TTFT 3.99s · decode 8.93 tok/s · prefill 7.8 tok/s · 170 tok
+[11:52:15] [maya_glm_s24] RUN speed_2
+[11:52:31] [maya_glm_s24]   speed_2: TTFT 0.14s · decode 10.57 tok/s · prefill 227.6 tok/s · 172 tok
+[11:52:31] [maya_glm_s24] RUN speed_3
+[11:52:46] [maya_glm_s24]   speed_3: TTFT 0.12s · decode 12.44 tok/s · prefill 257.8 tok/s · 182 tok
+[11:52:46] [maya_glm_s24] RUN speed_code
+[11:54:45] [maya_glm_s24]   speed_code: TTFT 6.77s · decode 7.02 tok/s · prefill 6.9 tok/s · 788 tok
+[11:54:45] [maya_glm_s24] RUN prefill_4k
+[11:59:02] [maya_glm_s24]   prefill_4k: TTFT 255.99s · decode 6.95 tok/s · prefill 10.7 tok/s · 8 tok · PASS
+[11:59:02] [maya_glm_s24] RUN prefill_16k
+[12:10:55] [maya_glm_s24]   prefill_16k: TTFT 711.66s · decode 7.02 tok/s · prefill 15.3 tok/s · 8 tok · PASS
+[12:10:55] [maya_glm_s24] RUN prefill_28k
+[12:29:48] [maya_glm_s24]   prefill_28k: TTFT 1131.06s · decode 6.21 tok/s · prefill 16.8 tok/s · 8 tok · PASS
+[12:29:48] [maya_glm_s24] RUN q_aime
+[12:31:44] [maya_glm_s24]   q_aime: TTFT 8.45s · decode 7.35 tok/s · prefill 5.3 tok/s · 791 tok · PASS
+[12:31:44] [maya_glm_s24] RUN q_zeros
+[12:32:04] [maya_glm_s24]   q_zeros: TTFT 5.63s · decode 7.99 tok/s · prefill 7.1 tok/s · 117 tok · PASS
+[12:32:04] [maya_glm_s24] RUN q_letters
+[12:32:13] [maya_glm_s24]   q_letters: TTFT 4.74s · decode 10.02 tok/s · prefill 7.8 tok/s · 48 tok · PASS
+[12:32:13] [maya_glm_s24] RUN q_lru
+[12:32:44] [maya_glm_s24]   q_lru: TTFT 10.58s · decode 6.58 tok/s · prefill 6.6 tok/s · 134 tok
+[12:32:44] [maya_glm_s24]   q_lru hidden tests: PASS
+[12:32:44] [maya_glm_s24] DONE
