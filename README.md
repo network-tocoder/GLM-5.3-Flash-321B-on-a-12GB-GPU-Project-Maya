@@ -5,6 +5,8 @@
 ![Build](https://img.shields.io/badge/Build-Maya--S24%20(94.7%20GB)-0ea5e9?style=for-the-badge)
 ![RAM](https://img.shields.io/badge/RAM-60%20GB-f59e0b?style=for-the-badge)
 
+[![Subscribe](https://img.shields.io/badge/Subscribe-NetworkCoder-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@NetworkCoder?sub_confirmation=1)
+
 Run **GLM-5.3-Flash**, a 321B mixture-of-experts model (~18B active per word), on one **12 GB gaming graphics card** with **[Project Maya](https://github.com/mw00/project-maya)**. The graphics card, the RAM and the SSD work together: the experts the conversation uses most stay on the card, the next ones in RAM, and the rest are read from the SSD.
 
 This repo has the exact **commands**, the **test scripts**, every **model output** (the apps it built, the SVG, the vision rebuild), and the **raw logs** from the video, including a per-second log of VRAM, RAM and SSD reads.
