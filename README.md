@@ -7,11 +7,18 @@
 
 [![Subscribe](https://img.shields.io/badge/Subscribe-NetworkCoder-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@NetworkCoder?sub_confirmation=1)
 
+**GLM 5.3 Flash** is a 321-billion-parameter model. 
+
+**[Project Maya](https://github.com/mw00/project-maya)**, a brand-new open-source engine, splits the model across the graphics card, RAM and SSD, and tunes itself to your PC. I set it up, ran the full test set, and compared it with DeepSeek V4.1 Flash on Strata on the exact same graphics card.
+
+Every number in this video comes from a real run on real hardware. Project Maya is a new, small project — take this as an exciting first look, not the final word.
+
+
 Run **GLM-5.3-Flash**, a 321B mixture-of-experts model (~18B active per word), on one **12 GB gaming graphics card** with **[Project Maya](https://github.com/mw00/project-maya)**. The graphics card, the RAM and the SSD work together: the experts the conversation uses most stay on the card, the next ones in RAM, and the rest are read from the SSD.
 
 This repo has the exact **commands**, the **test scripts**, every **model output** (the apps it built, the SVG, the vision rebuild), and the **raw logs** from the video, including a per-second log of VRAM, RAM and SSD reads.
 
-**Project Maya** opensource project small project. Take these results as an exciting first look, not a final verdict. Read its scripts before running them.
+**Project Maya** is opensource project small project. Take these results as an exciting first look, not a final verdict. Read its scripts before running them.
 
 ## Results
 
