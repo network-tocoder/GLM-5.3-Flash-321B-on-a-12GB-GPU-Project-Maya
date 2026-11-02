@@ -118,7 +118,7 @@ Run the same tests: start Maya, then `config/run_all_tests.sh`.
 
 | Video | Repo |
 |---|---|
-| DeepSeek V4.1 Flash 763B on a 12GB GPU (Strata) | [link](https://github.com/network-tocoder/DeepSeek-V4.1-Flash-763B-on-a-12GB-GPU-Strata) |
+| DeepSeek V4.1 Flash 763B on a 12GB GPU (Strata) | [link](https://github.com/network-tocoder/DeepSeek-V4.1-Flash-763B-on-a-12GB-GPU) |
 | Flint 40B on an 8GB GPU (llama.cpp + DeepSeek Harness) | [link](https://github.com/network-tocoder/Flint-40B-on-an-8GB-GPU-llama.cpp-DeepSeek-Harness) |
 
 GLM-5.3-Flash by [Z.ai](https://huggingface.co/zai-org) · [Project Maya](https://github.com/mw00/project-maya) by mw00 · Maya GGUF builds by peasantsmith
