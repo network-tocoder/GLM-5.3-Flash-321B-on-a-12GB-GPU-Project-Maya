@@ -7,7 +7,7 @@
 
 [![Subscribe](https://img.shields.io/badge/Subscribe-NetworkCoder-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@NetworkCoder?sub_confirmation=1)
 
-**GLM 5.3 Flash** is a 321-billion-parameter model. 
+**GLM-5.3-Flash by [Z.ai](https://huggingface.co/zai-org)** is a 321-billion-parameter model.  
 
 **[Project Maya](https://github.com/mw00/project-maya)**, a brand-new open-source engine, splits the model across the graphics card, RAM and SSD, and tunes itself to your PC. I set it up, ran the full test set, and compared it with DeepSeek V4.1 Flash on Strata on the exact same graphics card.
 
