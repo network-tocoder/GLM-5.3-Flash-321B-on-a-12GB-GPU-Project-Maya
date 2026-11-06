@@ -5,7 +5,7 @@
 ![Build](https://img.shields.io/badge/Build-Maya--S24%20(94.7%20GB)-0ea5e9?style=for-the-badge)
 ![RAM](https://img.shields.io/badge/RAM-60%20GB-f59e0b?style=for-the-badge)
 
-[![Subscribe](https://img.shields.io/badge/Subscribe-NetworkCoder-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@NetworkCoder?sub_confirmation=1)
+[![Video](https://img.shields.io/badge/Video-NetworkCoder-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=PPE3OHQiL5M)
 
 **GLM-5.3-Flash** by [Z.ai](https://huggingface.co/zai-org) is a 321-billion-parameter model.  
 
